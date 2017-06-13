@@ -1,1 +1,106 @@
+.wrapper
+	max-width: 1440px
+	margin: 0 auto
+	font-family: "OpenSansRegular"
+	color: #484c55
+	header
+		max-width: 1440px
+		padding: 100px 100px 0 135px
+		.cbp-af-header
+			position: fixed
+			top: 0
+			left: 0
+			width: 100%
+			background: #ffffff
+			z-index: 10000
+			height: 100px
+			overflow: hidden
+			-webkit-transition: height 0.3s
+			-moz-transition: height 0.3s
+			transition: height 0.3s
+			.cbp-af-inner
+				width: 90%
+				max-width: 69em
+				margin: 0 auto
+				padding: 0 1.875em
+				h1,
+				nav
+					display: inline-block
+					position: relative
+				h1,
+				nav a
+					line-height: 100px
+				h1
+					margin: 0
+					float: left
+				nav
+					float: right
+				nav a
+					color: #60646c
+					font-weight: 700
+					margin: 0 0 0 20px
+					font-size: 15px
+					text-decoration: none
+				nav a:hover
+					color: #49cbcd
+				h1,
+				nav a
+					-webkit-transition: all 0.3s
+					-moz-transition: all 0.3s
+					transition: all 0.3s
+		.cbp-af-header.cbp-af-header-shrink
+			height: 90px
+		.cbp-af-header.cbp-af-header-shrink h1,
+		.cbp-af-header.cbp-af-header-shrink nav a
+			line-height: 90px
+		.cbp-af-header.cbp-af-header-shrink h1
+			font-size: 2em
+	@media screen and (max-width: 55em)
+		.cbp-af-header .cbp-af-inner
+			width: 100%
+		.cbp-af-header h1,
+		.cbp-af-header nav
+			display: block
+			margin: 0 auto
+			text-align: center
+			float: none
+		.cbp-af-header h1,
+		.cbp-af-header nav a
+			line-height: 115px
+		.cbp-af-header nav a
+			margin: 0 10px
+		.cbp-af-header.cbp-af-header-shrink h1,
+		.cbp-af-header.cbp-af-header-shrink nav a
+			line-height: 45px
+		.cbp-af-header.cbp-af-header-shrink h1
+			font-size: 2em
+		.cbp-af-header.cbp-af-header-shrink nav a
+			font-size: 1em
+	@media screen and (max-width: 32.25em)
+		.cbp-af-header nav a
+			font-size: 1em
+	@media screen and (max-width: 24em)
+		.cbp-af-header nav a,
+		.cbp-af-header.cbp-af-header-shrink nav a
+			line-height: 1
 
+	.section_slide
+		position: relative
+		.next, .prev
+			display: inline-block
+			font-size: 50px
+			color: #ffffff
+			cursor: pointer
+			position: absolute
+			top: 50%
+			z-index: 10
+		.next
+			right: 30px
+		.prev
+			left: 30px
+		#owl-demo
+			.item
+				img
+					display: block
+					width: 100%
+					height: auto

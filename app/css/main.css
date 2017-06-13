@@ -1,0 +1,153 @@
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "OpenSansRegular";
+  color: #484c55;
+}
+
+.wrapper header {
+  max-width: 1440px;
+  padding: 100px 100px 0 135px;
+}
+
+.wrapper header .cbp-af-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 10000;
+  height: 100px;
+  overflow: hidden;
+  -webkit-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.wrapper header .cbp-af-header .cbp-af-inner {
+  width: 90%;
+  max-width: 69em;
+  margin: 0 auto;
+  padding: 0 1.875em;
+}
+
+.wrapper header .cbp-af-header .cbp-af-inner h1,
+.wrapper header .cbp-af-header .cbp-af-inner nav {
+  display: inline-block;
+  position: relative;
+}
+
+.wrapper header .cbp-af-header .cbp-af-inner h1,
+.wrapper header .cbp-af-header .cbp-af-inner nav a {
+  line-height: 100px;
+}
+
+.wrapper header .cbp-af-header .cbp-af-inner h1 {
+  margin: 0;
+  float: left;
+}
+
+.wrapper header .cbp-af-header .cbp-af-inner nav {
+  float: right;
+}
+
+.wrapper header .cbp-af-header .cbp-af-inner nav a {
+  color: #60646c;
+  font-weight: 700;
+  margin: 0 0 0 20px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.wrapper header .cbp-af-header .cbp-af-inner nav a:hover {
+  color: #49cbcd;
+}
+
+.wrapper header .cbp-af-header .cbp-af-inner h1,
+.wrapper header .cbp-af-header .cbp-af-inner nav a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.wrapper header .cbp-af-header.cbp-af-header-shrink {
+  height: 90px;
+}
+
+.wrapper header .cbp-af-header.cbp-af-header-shrink h1,
+.wrapper header .cbp-af-header.cbp-af-header-shrink nav a {
+  line-height: 90px;
+}
+
+.wrapper header .cbp-af-header.cbp-af-header-shrink h1 {
+  font-size: 2em;
+}
+
+@media screen and (max-width: 55em) {
+  .wrapper .cbp-af-header .cbp-af-inner {
+    width: 100%;
+  }
+  .wrapper .cbp-af-header h1,
+  .wrapper .cbp-af-header nav {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+  }
+  .wrapper .cbp-af-header h1,
+  .wrapper .cbp-af-header nav a {
+    line-height: 115px;
+  }
+  .wrapper .cbp-af-header nav a {
+    margin: 0 10px;
+  }
+  .wrapper .cbp-af-header.cbp-af-header-shrink h1,
+  .wrapper .cbp-af-header.cbp-af-header-shrink nav a {
+    line-height: 45px;
+  }
+  .wrapper .cbp-af-header.cbp-af-header-shrink h1 {
+    font-size: 2em;
+  }
+  .wrapper .cbp-af-header.cbp-af-header-shrink nav a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 32.25em) {
+  .wrapper .cbp-af-header nav a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 24em) {
+  .wrapper .cbp-af-header nav a,
+  .wrapper .cbp-af-header.cbp-af-header-shrink nav a {
+    line-height: 1;
+  }
+}
+
+.wrapper .section_slide {
+  position: relative;
+}
+
+.wrapper .section_slide .next, .wrapper .section_slide .prev {
+  display: inline-block;
+  font-size: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+
+.wrapper .section_slide .next {
+  right: 30px;
+}
+
+.wrapper .section_slide .prev {
+  left: 30px;
+}
+
+.wrapper .section_slide #owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
