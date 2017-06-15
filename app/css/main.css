@@ -151,3 +151,70 @@
   width: 100%;
   height: auto;
 }
+
+.wrapper .section_team {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.wrapper .section_team h1 {
+  text-align: center;
+  padding-bottom: 120px;
+  font-size: 42px;
+}
+
+.wrapper .section_team .cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+}
+
+.wrapper .section_team .cards .card {
+  margin: auto;
+  display: inline-block;
+  -webkit-flex-basis: 310px;
+      -ms-flex-preferred-size: 310px;
+          flex-basis: 310px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.wrapper .section_team .cards .card .foto {
+  background: url("../img/ellipse.png") no-repeat center top;
+  height: 201px;
+  width: 201px;
+  margin: 0 auto;
+}
+
+.wrapper .section_team .cards .card .foto img {
+  opacity: 0;
+}
+
+.wrapper .section_team .cards .card .foto img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.wrapper .section_team .cards .card h3 {
+  font-size: 22px;
+}
+
+.wrapper .section_team .cards .card h4 {
+  font-size: 14px;
+}
+
+.wrapper .section_team .cards .card p {
+  font-size: 14px;
+}
