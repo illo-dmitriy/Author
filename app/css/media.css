@@ -2,17 +2,153 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	body .header .menu li a {
+		font-size: 24px;
+	}
+	body .header .logo a img{
+		width: 180px;
+	}
+	body .content .section_team h1 {
+		padding-bottom: 70px;
+	}
+	body .content .section_team h1 {
+    font-size: 48px;
+	}
+	body .content .section_team .cards .card h3 {
+    font-size: 26px;
+	}
+	body .content .section_team .cards .card h4 {
+    font-size: 20px;
+	}
+	body .content .section_team .cards .card p {
+    font-size: 18px;
+	}
+	body .content .section_plans .plan table thead th button {
+    font-size: 30px;
+  }
+  body .content .section_plans .plan table thead td {
+    font-size: 28px;
+  }
+  body .content .section_plans .plan table {
+    font-size: 22px;
+  }
+  body .content .section_plans .plan table tfoot td button {
+  	font-size: 20px;
+  }
+  body .content .section_contact h2 {
+  	font-size: 45px;
+    margin-bottom: 40px;
+	}
+	body .content .section_contact .contact_text h3 {
+    font-size: 28px;
+	}
+	body .content .section_contact .contact_text p {
+    font-size: 18px;
+	}
+	body .content .section_contact .contact_text .tel {
+    font-size: 18px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+		body .header .menu li a {
+    font-size: 28px;
+	}
+	body .header .logo a img{
+		width: 200px;
+	}
+	body .content .section_team h1 {
+		padding-bottom: 40px;
+	}
+	body .content .section_team h1 {
+    font-size: 48px;
+	}
+	body .content .section_team .cards .card h3 {
+    font-size: 32px;
+	}
+	body .content .section_team .cards .card h4 {
+    font-size: 28px;
+	}
+	body .content .section_team .cards .card p {
+    font-size: 26px;
+	}
+	body .content .section_plans .plan table thead th button {
+    font-size: 38px;
+	}
+	body .content .section_plans .plan table thead td {
+    font-size: 32px;
+	}
+	body .content .section_plans .plan table {
+    font-size: 28px;
+	}
+	body.section_plans .plan table tfoot td button {
+    font-size: 26px;
+	}
+	body .content .section_contact h2 {
+    font-size: 52px;
+  }
+  body .content .section_contact .contact_text h3{
+  	font-size: 32px;
+  }
+  body .content .section_contact .contact_text p {
+    font-size: 22px;
+	}
+	body .content .section_contact .contact_text .tel {
+    font-size: 22px;
+	}
+	body .content .section_contact .forma form textarea {
+		height: 200px;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	body .header .menu li a {
+    font-size: 32px;
+	}
+	body .header .logo a img{
+		width: 240px;
+	}
+	body .content .section_team h1 {
+    font-size: 58px;
+	}
+	body .content .section_team .cards .card {
+		flex-basis: 450px;
+	}
+	body .content .section_team .cards .card h3 {
+    font-size: 42px;
+	}
+	body .content .section_team .cards .card h4 {
+    font-size: 36px;
+	}
+	body .content .section_team .cards .card p {
+    font-size: 32px;
+	}
+	body .content .section_plans .plan table thead th button {
+    font-size: 48px;
+	}
+	body .content .section_plans .plan table thead td {
+    font-size: 42px;
+	}
+	body .content .section_plans .plan table {
+    font-size: 38px;
+	}
+	body .content .section_plans .plan table tfoot td button {
+    font-size: 30px;
+	}
+	body .content .section_contact h2 {
+    font-size: 52px;
+  }
+  body .content .section_contact .contact_text h3 {
+    font-size: 38px;
+	}
+	body .content .section_contact .contact_text p {
+    font-size: 28px;
+	}
+	body .content .section_contact .contact_text .tel {
+    font-size: 22px;
+	}
 }
 
 /* Extra Small Devices, Phones */

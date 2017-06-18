@@ -43,7 +43,8 @@ gulp.task('css-libs', ['sass'], function(){
 
 gulp.task('script', function(){
  return gulp.src(['app/libs/jquery/dist/jquery.min.js',
-      'app/libs/owl-carousel/owl-carousel/owl.carousel.min.js'])
+      'app/libs/owl-carousel/owl-carousel/owl.carousel.min.js',
+      'app/libs/headhesive.min.js'])
          .pipe(concat('libs.min.js'))
          .pipe(uglify())
          .pipe(gulp.dest('app/js'))

@@ -1,35 +1,46 @@
-var cbpAnimatedHeader = (function() {
+var header = new Headhesive('.header');
 
-	var docElem = document.documentElement,
-		header = document.querySelector( '.cbp-af-header' ),
-		didScroll = false,
-		changeHeaderOn = 300;
+var planHover = (function() {
 
-	function init() {
-		window.addEventListener( 'scroll', function( event ) {
-			if( !didScroll ) {
-				didScroll = true;
-				setTimeout( scrollPage, 250 );
-			}
-		}, false );
-	}
+	var basic = document.querySelector(".basic");
+	var pro = document.querySelector(".pro");
+	var premium = document.querySelector(".premium");
+	var buyBasic = document.querySelector(".buy_basic");
+	var buyPro = document.querySelector(".buy_pro");
+	var buyPremium = document.querySelector(".buy_premium");
 
-	function scrollPage() {
-		var sy = scrollY();
-		if ( sy >= changeHeaderOn ) {
-			classie.add( header, 'cbp-af-header-shrink' );
-		}
-		else {
-			classie.remove( header, 'cbp-af-header-shrink' );
-		}
-		didScroll = false;
-	}
+	buyBasic.addEventListener("mouseover",
+		function () {
+			buyBasic.style.backgroundColor = "#49cbcd";
+			basic.style.backgroundColor = "#49cbcd";
+		});
+	buyBasic.addEventListener("mouseout",
+		function () {
+			buyBasic.style.backgroundColor = "#485460";
+			basic.style.backgroundColor = "#485460";
+		});
 
-	function scrollY() {
-		return window.pageYOffset || docElem.scrollTop;
-	}
+	buyPro.addEventListener("mouseover",
+		function () {
+			buyPro.style.backgroundColor = "#49cbcd";
+			pro.style.backgroundColor = "#49cbcd";
+		});
+	buyPro.addEventListener("mouseout",
+		function () {
+			buyPro.style.backgroundColor = "#485460";
+			pro.style.backgroundColor = "#485460";
+		});
 
-	init();
+	buyPremium.addEventListener("mouseover",
+		function () {
+			buyPremium.style.backgroundColor = "#49cbcd";
+			premium.style.backgroundColor = "#49cbcd";
+		});
+	buyPremium.addEventListener("mouseout",
+		function () {
+			buyPremium.style.backgroundColor = "#485460";
+			premium.style.backgroundColor = "#485460";
+		});
 
 })();
 

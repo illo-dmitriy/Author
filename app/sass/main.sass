@@ -1,142 +1,224 @@
-.wrapper
-	max-width: 1440px
+body
+	width: 1340px
 	margin: 0 auto
 	font-family: "OpenSansRegular"
 	color: #484c55
-	header
-		max-width: 1440px
-		padding: 100px 100px 0 135px
-		.cbp-af-header
-			position: fixed
-			top: 0
-			left: 0
-			width: 100%
-			background: #ffffff
-			z-index: 10000
-			height: 100px
-			overflow: hidden
-			-webkit-transition: height 0.3s
-			-moz-transition: height 0.3s
-			transition: height 0.3s
-			.cbp-af-inner
-				width: 90%
-				max-width: 69em
-				margin: 0 auto
-				padding: 0 1.875em
-				h1,
-				nav
-					display: inline-block
-					position: relative
-				h1,
-				nav a
-					line-height: 100px
-				h1
-					margin: 0
-					float: left
-				nav
-					float: right
-				nav a
-					color: #60646c
-					font-weight: 700
-					margin: 0 0 0 20px
-					font-size: 15px
-					text-decoration: none
-				nav a:hover
-					color: #49cbcd
-				h1,
-				nav a
-					-webkit-transition: all 0.3s
-					-moz-transition: all 0.3s
-					transition: all 0.3s
-		.cbp-af-header.cbp-af-header-shrink
-			height: 90px
-		.cbp-af-header.cbp-af-header-shrink h1,
-		.cbp-af-header.cbp-af-header-shrink nav a
-			line-height: 90px
-		.cbp-af-header.cbp-af-header-shrink h1
-			font-size: 2em
-	@media screen and (max-width: 55em)
-		.cbp-af-header .cbp-af-inner
-			width: 100%
-		.cbp-af-header h1,
-		.cbp-af-header nav
-			display: block
-			margin: 0 auto
-			text-align: center
-			float: none
-		.cbp-af-header h1,
-		.cbp-af-header nav a
-			line-height: 115px
-		.cbp-af-header nav a
-			margin: 0 10px
-		.cbp-af-header.cbp-af-header-shrink h1,
-		.cbp-af-header.cbp-af-header-shrink nav a
-			line-height: 45px
-		.cbp-af-header.cbp-af-header-shrink h1
-			font-size: 2em
-		.cbp-af-header.cbp-af-header-shrink nav a
-			font-size: 1em
-	@media screen and (max-width: 32.25em)
-		.cbp-af-header nav a
-			font-size: 1em
-	@media screen and (max-width: 24em)
-		.cbp-af-header nav a,
-		.cbp-af-header.cbp-af-header-shrink nav a
-			line-height: 1
-
-	.section_slide
-		position: relative
-		.next, .prev
+	.headhesive
+		position: fixed
+		width: 100%
+		transform: translateY(-100%)
+		z-index: 2
+	.headhesive--stick
+		transform: translateY(0)
+		max-width: 1340px
+		margin: 0 auto
+	.header
+		background-color: #ffffff
+		max-width: 1340px
+		margin: 0 auto
+		padding-top: 30px
+		.logo
 			display: inline-block
-			font-size: 50px
-			color: #ffffff
-			cursor: pointer
-			position: absolute
-			top: 50%
-			z-index: 10
-		.next
-			right: 30px
-		.prev
-			left: 30px
-		#owl-demo
-			.item
-				img
-					display: block
-					width: 100%
-					height: auto
-
-	.section_team
-		text-align: center
-		padding-top: 90px
-		padding-bottom: 90px
-		h1
-			text-align: center
-			padding-bottom: 120px
-			font-size: 42px
-		.cards
-			display: flex
-			flex-wrap: wrap
-			align-content: center
-			.card
-				margin: auto
+			float: left
+			padding-left: 70px
+		.menu
+			display: inline-block
+			float: right
+			margin: 0
+			padding-right: 70px
+			li
 				display: inline-block
-				flex-basis: 310px
-				flex-grow: 1
-				padding-right: 10px
-				padding-left: 10px
-				.foto
-					background: url('../img/ellipse.png') no-repeat center top
-					height: 201px
-					width: 201px
-					margin: 0 auto
+				padding-bottom: 40px
+				padding-top: 10px
+				border-bottom: 3px solid #fff
+				a
+					padding-left: 20px
+					padding-right: 20px
+					padding-bottom: 0
+					text-decoration: none
+					color: #484c55
+					font-size: 15px
+				a:hover
+					color: #49cbcd
+			li:hover
+				border-bottom: 3px solid #49cbcd
+	.header:after
+		content: ""
+		clear: both
+		display: block
+
+	.content
+		max-width: 1340px
+		.section_slide
+			max-width: 1340px
+			position: relative
+			.next, .prev
+				display: inline-block
+				font-size: 50px
+				color: #ffffff
+				cursor: pointer
+				position: absolute
+				top: 50%
+				z-index: 1
+			.next
+				right: 40px
+			.prev
+				left: 40px
+			#owl-demo
+				.item
 					img
-						opacity: 0
-					img:hover
-						opacity: 1
-						cursor: pointer
-				h3
-					font-size: 22px
-				h4
+						display: block
+						width: 100%
+						height: auto
+
+		.section_team
+			text-align: center
+			padding-top: 90px
+			padding-bottom: 90px
+			h1
+				text-align: center
+				padding-bottom: 120px
+				font-size: 42px
+			.cards
+				max-width: 1340px
+				margin: 0 auto
+				display: flex
+				flex-wrap: wrap
+				align-content: center
+				.card
+					margin: auto
+					display: inline-block
+					flex-basis: 310px
+					flex-grow: 1
+					padding-right: 10px
+					padding-left: 10px
+					.foto
+						background: url('../img/ellipse.png') no-repeat center top
+						height: 201px
+						width: 201px
+						margin: 0 auto
+						img
+							opacity: 0
+						img:hover
+							opacity: 1
+							cursor: pointer
+					h3
+						font-size: 22px
+					h4
+						font-size: 14px
+					p
+						font-size: 14px
+
+		.section_plans
+			text-align: center
+			padding-top: 100px
+			padding-bottom: 100px
+			background-color: #f1f1f1
+			max-width: 1340px
+			.plan
+				display: inline-block
+				table
+					display: inline-block
+					border: 1px solid #f1f1f1
 					font-size: 14px
+					margin-left: 10px
+					margin-right: 10px
+					thead
+						th
+							button
+								font-size: 26px
+								background-color: #485460
+								color: #ffffff
+								width: 370px
+								text-align: center
+								height: 75px
+								border: 1px solid #f1f1f1
+						td
+							font-size: 20px
+							width: 370px
+							height: 70px
+							background-color: #f8f9fb
+					tbody
+						td
+							color: #8c9299
+							background-color: #ffffff
+							width: 370px
+							height: 45px
+							border: 1px solid #f1f1f1
+					tfoot
+						td
+							width: 370px
+							height: 100px
+							background-color: #f8f9fb
+							button
+								cursor: pointer
+								background-color: #485460
+								color: #ffffff
+								height: 40px
+								width: 170px
+								border: 0
+								border-radius: 3px
+								font-size: 17px
+								font-family: "OpenSansSemiBold"
+
+		.section_contact
+			background-image: url('../img/contact.png')
+			height: 688px
+			max-width: 1340px
+			h2
+				padding-top: 100px
+				color: #ffffff
+				font-size: 42px
+				text-align: center
+				margin-bottom: 100px
+			.contact_text
+				padding-left: 130px
+				width: 450px
+				display: inline-block
+				float: left
+				color: #999999
+				h3
+					color: #ffffff
+					font-size: 24px
 				p
 					font-size: 14px
+					color: #969696
+				a
+					padding-right: 10px
+				.social
+					padding-top: 20px
+					padding-bottom: 10px
+				.tel
+					font-family: "MyriadProRegular"
+					color: #bface2
+					font-size: 14px
+			.forma
+				display: inline-block
+				padding-top: 20px
+				float: left
+				padding-right: 30px
+				padding-left: 90px
+				form
+					input[name='name']
+						width: 270px
+						height: 45px
+						border-radius: 3px
+						margin-right: 27px
+					input[name='email']
+						width: 270px
+						height: 45px
+						border-radius: 3px
+					textarea
+						padding-top: 10px
+						width: 572px
+						height: 180px
+						border-radius: 3px
+					button
+						cursor: pointer
+						background-color: #49cbcd
+						color: #ffffff
+						width: 170px
+						height: 50px
+						border-radius: 3px
+						float: right
+						border: 0
