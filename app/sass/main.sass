@@ -42,6 +42,28 @@ body
 					color: #49cbcd
 			li:hover
 				border-bottom: 3px solid #49cbcd
+		.menu_but
+			display: none
+			float: right
+			margin-right: 90px
+			margin-top: 10px
+			cursor: pointer
+		.mobile_menu
+			display: none
+			float: left
+			padding-left: 300px
+			li
+				border-bottom: 3px solid #fff
+				list-style-type: none
+				padding-bottom: 10px
+				padding-top: 10px
+				a
+					padding-bottom: 0
+					text-decoration: none
+					color: #484c55
+					font-size: 42px
+				a:hover
+					color: #49cbcd	
 	.header:after
 		content: ""
 		clear: both
@@ -115,8 +137,11 @@ body
 			padding-bottom: 100px
 			background-color: #f1f1f1
 			max-width: 1340px
+			display: flex
+			flex-wrap: wrap
 			.plan
-				display: inline-block
+				flex-basis: 310px
+				flex-grow: 1
 				table
 					display: inline-block
 					border: 1px solid #f1f1f1
